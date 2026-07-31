@@ -129,6 +129,10 @@ button:hover {
 	display: none;
 }
 
+#QRCODE {
+	width: 150px;
+}
+
 
 
 /*Responsive menu*/
