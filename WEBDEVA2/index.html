@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Assignment 2</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<link rel="stylesheet" href="style.css">
+		<script src="main.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<h1>Theory of Relativity</h1>
+			<nav> <!--menu system-->
+				<button id="hamIcon">Open Menu</button>
+				<ul> <!--Menu Buttons-->
+					<li><button id="page1btn">Home</button></li>
+					<li><button id="page2btn">Special Relativity</button></li>
+					<li><button id="page3btn">General Relativity</button></li>
+					<li><button id="page4btn">Game</button></li>
+					<li><button id="page5btn">Quiz</button></li>
+				</ul>
+			</nav>
+		</header>
+		<main id="pagecontainer">
+			<!--First Section-->
+			<section class="page" id="page1">
+				<h2>Context</h2>
+				<p>
+					Around the 1500s, a period called the Scientific Revolution began in Europe. During the centuries after, scientists began to question the
+					beliefs of the people in ancient and medieval times, and use new technologies and research methods in the quest to understand the universe more accurately. 
+					Towards the end of the period, Sir Isaac Newton developed groundbreaking theories of mathematics 
+					and physics, the study of the motion of matter through space and time. Many scientists used Newton's theories as the foundation for their
+					explorations into math, science, and astronomy.
+				</p>
+				<img class="newton" src="images/invis.png" alt="Picture of Newton" title="Sir Isaac Newton">
+				<img class="einstein" src="images/invis.png" alt="Picture of Einstein" title="Albert Einstein">
+				<p>
+					As scientific knowledge spread and technology improved, researchers were able to understand the universe better.
+					Physicists and astronomers made great advancements toward understanding the universe. Many of their findings
+					supported Newton's laws, but an alarming number of findings contradicted them. Scientists began to wonder if the work of
+					Newton was as foolproof as previously thought. These scientists found troubling inconsistencies in
+					their studies of speed and motion in the universe and in the study of gravity's effect on the paths of planets as they orbit the Sun.
+					This was when Albert Einstein started to work on his own theories to challenge Newton's long-held assumptions, eventually reshaping
+					our understanding of space, time, and gravity through his theory of relativity.
+				</p>
+				<!--Timeline-->
+				<h2>Timeline</h2>
+				<div class="timeline">
+					<div class="timelineLine"></div>
+					<!--Years-->
+					<ul class="timelineContent">
+						<li>
+							<div class="timelineDot"></div>
+							<span class="timelineYear">1687</span>
+							<h3>Newton's Principia</h3>
+							<p>Newton publishes his laws of motion and universal gravitation.</p>
+						</li>
+						<li>
+							<div class="timelineDot"></div>
+							<span class="timelineYear">1859</span>
+							<h3>Mercury's Orbit Problem</h3>
+							<p>Astronomers notice Mercury's orbit doesn't match Newton's predictions.</p>
+						</li>
+						<li>
+							<div class="timelineDot"></div>
+							<span class="timelineYear">1905</span>
+							<h3>Special Relativity</h3>
+							<p>Einstein publishes his theory of special relativity.</p>
+						</li>
+						<li>
+							<div class="timelineDot"></div>
+							<span class="timelineYear">1915</span>
+							<h3>General Relativity</h3>
+							<p>Einstein extends his theory to include gravity.</p>
+						</li>
+					</ul>
+				</div>
+				<h2>Media</h2>
+				<p>The movies Interstellar and Project Hail Mary explore some of these ideas</p>
+			</section>
+			<!--Second Section-->
+			<section class="page" id="page2">
+				<h2>Special</h2>
+				<p>
+					In 1905, Albert Einstein published a study called "The Electrodynamics of Moving Bodies." The paper is much more widely known as the "Special Theory of Relativity."
+					Einstein posited that forces such as speed, time, mass, and energy are closely linked in the natural world.
+					Changes in one force bring changes to the others. He described the unique relationship between some of these forces with the equation E = mc^2, in which E
+					represents energy, m represents mass, and c represents the speed of light. According to this formula, great speeds can alter other aspects of physics, such
+					as time or mass. However, the theory left out one crucial component, gravity. He would then work on a new theory that would incorporate the force of gravity into the equation.
+				</p>
+				<img class="special" src="images/invis.png" alt="Picture of Time Dilation" title="Special Relativity">
+				<img class="train" src="images/invis.png" alt="Picture of Train Explanation" title="Train Thought Experiment">
+				<h2>Evidence</h2>
+				<p>
+					Although this concept may seem very strange, scientists have confirmed it in some practical tests. One test proved, for instance, that a
+					clock traveling in a jet plane at great speeds will measure time more slowly than a clock that is at rest.
+				</p>
+			</section>
+			<!--Third Section-->
+			<section class="page" id="page3">
+				<h2>General</h2>
+				<p>
+					In 1915, Einstein introduced the core field equations of General Relativity, and in 1916, he published the complete overview of it. 
+					The General Theory explained gravity in relation to the other forces of the universe. Einstein explained that massive objects in space, such as stars
+					and planets, cause the shape of space to warp into a curve. Basically, large objects can push space downward. An everyday example of this occurs when
+					a person lies on a bed. The weight of the person's body causes the bed mattress to sink downward slightly, changing the shape of its surface.
+					Similarly, planets change the shape of space. The altered shape of space, in turn, alters the path of other, smaller objects that are moving through
+					that space.
+				</p>
+				<img class="general" src="images/invis.png" alt="Picture of how mass effects spacetime" title="General Relativty">
+				<img class="gravity" src="images/invis.png" alt="Picture of how mass effects spacetime" title="Gravity">
+				<h2>Evidence</h2>
+				<p>
+					In 1919, Sir Arthur Eddington observed the bending of starlight during a solar eclipse, which proves the theory.
+				</p>
+			</section>
+			<!--Fourth Section-->
+			<section class="page" id="page4">
+				<h2>Game</h2>
+				<div id="game">
+					<img src="images/Galaxy.jpg" alt="Picture of the Milky Way Galaxy" title="Galaxy" id="galaxyImage">
+					<img src="images/Spaceship.png" alt="Spaceship" id="spaceship">
+				</div>
+				<div id="spaceshipInterface">
+					<p>Click anywhere in the galaxy</p>
+					<div id="speedControl" class="game-hidden">
+						<label for="speedSlider">Speed: <span id="speedValue">0.50c</span></label>
+						<input type="range" id="speedSlider" min="0.10" max="0.99" step="0.01" value="0.50">
+						<button id="launchBtn">Engage Drive</button>
+					</div>
+					<div id="results" class="game-hidden">
+						<p>Time passed for traveller: <span id="shipTime"></span></p>
+						<p>Time passed on Earth: <span id="earthTime"></span></p>
+					</div>
+					<button id="resetBtn" class="game-hidden">Reset</button>
+				</div>
+			</section>
+			<!--Fifth Section-->
+			<section class="page" id="page5">
+				<h2>Quiz</h2>
+				<fieldset>
+					<legend>1. What period started around the 1500s that relates to understanding the universe better?</legend>
+					<input type="radio" name="q1" value="Space"> Space Race
+					<input type="radio" name="q1" value="Industrial"> Industrial Revolution
+					<input type="radio" name="q1" value="Scientific"> Scientific Revolution
+					<input type="radio" name="q1" value="Depression"> Great Depression
+				</fieldset>
+				<fieldset>
+					<legend>2. Who discovered gravity?</legend>
+					<input type="radio" name="q2" value="Einstein"> Albert Einstein
+					<input type="radio" name="q2" value="Newton"> Sir Isaac Newton
+					<input type="radio" name="q2" value="Tesla"> Nikola Tesla
+					<input type="radio" name="q2" value="Galileo"> Galileo Galilei
+				</fieldset>
+				<fieldset>
+					<legend>3. Which year did Einstein publish his theory of special relativity?</legend>
+					<input type="radio" name="q3" value="1905"> 1905
+					<input type="radio" name="q3" value="1915"> 1915
+					<input type="radio" name="q3" value="1916"> 1916
+					<input type="radio" name="q3" value="1906"> 1906
+				</fieldset>
+				<button id="btnSubmit">Submit Quiz</button>
+				<h3 id="scorebox">Not submitted</h3>
+			</section>
+		</main>
+		<footer>
+			<img src="images/qrcode_blazenade.github.io.png" alt="QRCODE" title="QRCODE" id="QRCODE">
+			<button id="btnFS">Full Screen</button>
+			<button id="btnWS">Exit Full Screen</button>
+		</footer>
+	</body>
+</html>
