@@ -1,0 +1,252 @@
+/* https://www.dafont.com/monofonto.font */
+@font-face {font-family: 'Monofonto'; src: url('fonts/monofonto rg.otf');}
+/* https://www.dafont.com/jackinput.font */
+@font-face {font-family: 'JackInput'; src: url('fonts/JAi_____.TTF');}
+/* https://www.dafont.com/akira-expanded.font */
+@font-face {font-family: 'Akira'; src: url('fonts/Akira Expanded Demo.otf');}
+
+
+/*html element css*/
+html {
+	background: black;
+	color: white;
+	font-family: 'JackInput';
+}
+
+h1 {
+	color: #3f91fc;
+	font-family: 'Akira';
+}
+
+h2 {
+	color: #3f91fc;
+	font-family: 'Monofonto';
+}
+
+/*remove margin and padding from menu navigation area*/
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline;
+}
+
+button {
+	cursor: pointer;
+	padding: 8px 10px;
+	color: white;
+	background: #1a1a1a;
+	border-radius: 4px;
+}
+
+button:hover {
+	background: #333333;
+}
+
+
+
+
+/*class css*/
+.page {
+	width: 90vw;
+	background: #0f0f0f;
+	animation-name: pageFadeIn;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
+}
+
+/*to unhide menu items*/
+.menuShow {
+	display: block;
+}
+
+/* Sprites */
+.einstein {
+	background: url('images/Sprite.png') no-repeat 0 0;
+	width: 219px;
+	height: 271px;
+}
+
+.newton {
+	background: url('images/Sprite.png') no-repeat -220px 0;
+	width: 226px;
+	height: 271px;
+}
+
+.special {
+	background: url('images/Sprite.png') no-repeat -701px -7px;
+	width: 251px;
+	height: 256px;
+}
+
+.train {
+	background: url('images/Sprite.png') no-repeat -246px -287px;
+	width: 410px;
+	height: 228px;
+}
+
+.general {
+	background: url('images/Sprite.png') no-repeat -450px 0;
+	width: 228px;
+	height: 271px;
+}
+
+.gravity {
+	background: url('images/Sprite.png') no-repeat -659px -287px;
+	width: 301px;
+	height: 223px;
+}
+
+
+
+
+
+/*id css*/
+#page1 {
+	/*background: white;*/
+}
+
+#page2 {
+	/*background: white;*/
+}
+
+#page3 {
+	/*background: white;*/
+}
+
+#page4 {
+	/*background: white;*/
+}
+
+#page5 {
+	/*background: white;*/
+}
+
+#hamIcon {
+	display: none;
+}
+
+#QRCODE {
+	width: 150px;
+}
+
+
+
+/*Responsive menu*/
+@media (max-width:800px) {
+	/*make a menu items vertical*/
+	nav ul li {
+		display: block;
+	}
+	/* unhide menu icon */
+	#hamIcon {
+		display: block;
+	}
+	/*hide the menu item list*/
+	nav ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.3s ease;
+	}
+	.menuShow {
+		max-height: 300px;
+	}
+	#QRCODE {
+		display: none;
+	}
+}
+
+
+
+
+/*Keyframes css*/
+@keyframes pageFadeIn {
+	0% {opacity: 0}
+	100% {opacity: 1}
+}
+
+
+
+
+
+/*Timeline*/
+.timeline {
+	position: relative;
+}
+
+.timelineLine {
+	position: absolute;
+	left: 12px;
+	top: 0;
+	bottom: 0;
+	width: 1px;
+	background: #3f91fc;
+}
+
+.timelineContent {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.timeline li {
+	padding-left: 30px;
+	margin-bottom: 20px;
+}
+
+.timelineDot {
+	position: absolute;
+	left: 6px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #3f91fc;
+	border: 2px solid black;
+}
+
+.timelineYear {
+	font-family: 'Monofonto';
+	color: #3f91fc;
+}
+
+.timeline h3 {
+	font-family: 'JackInput';
+	margin: 0;
+}
+
+.timeline p {
+	color: #cfcfcf;
+	margin: 0;
+}
+
+/*Game*/
+#game {
+	position: relative;
+	display: inline-block;
+}
+
+#galaxyImage {
+	display: block;
+}
+
+#spaceship {
+	position: absolute;
+	width: 40px;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+	display: none;
+}
+
+.game-hidden {
+	display: none;
+}
+
+#spaceshipInterface {
+	float: right;
+}
