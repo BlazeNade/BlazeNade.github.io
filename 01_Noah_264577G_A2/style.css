@@ -157,6 +157,9 @@ button:hover {
 	.menuShow {
 		max-height: 300px;
 	}
+	#QRCODE {
+		display: none;
+	}
 }
 
 
